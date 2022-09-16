@@ -1,5 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cormorant+Infant:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: 'Cormorant Infant', serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+header{
+    background-color: #292E36;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.top__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__item{
+    padding: 20px;
+}
+.nav__link{
+    padding: 15px 30px;
+    color: #fff;
+    padding: 10px;
+    transition: all .5s;
+}
+.active{
+    color: #E1B168;
+}
+.nav__link:hover{
+    color: #E1B168;
+}
+.top__navbar{
+    color: #fff;
+    padding: 20px 0 ;
+}
+.nav__items::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.346);
+    top: 0;
+}
+
+.call{
+    color: #fff;
+    border: 1px solid #E1B168;
+    padding: 15px 30px;
+    font-size: 14px;
+    transition: all .5s;
+}
+.call:hover{
+    background-color: #E1B168;
+}
+.res{
+    color: #fff;
+    border: 1px solid #E1B168;
+    padding: 15px 35px;
+    font-size: 16px;
+    transition: all .5s;
+    background-color: #E1B168;
+}
+.res:hover{
+    background-color: transparent;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.social__link > i{
+    color: #fff;
+    transition: all .5s;
+}
+.social__link > i:hover{
+    color: #E1B168;
 }
